@@ -1,0 +1,27 @@
+sudo: false
+language: rust
+rust:
+- 1.21.0  # Two releases back
+- stable
+- beta
+- nightly
+
+matrix:
+  include:
+  - rust: nightly-2018-01-12
+    env: CLIPPY_VERSION=0.0.179
+    install:
+      - travis_wait cargo install clippy --version $CLIPPY_VERSION || echo "clippy already installed"
+    script:
+      - cargo clippy -- -D clippy
+
+install:
+- rustc -Vv
+- cargo -V
+
+script:
+- cargo check --verbose
+- cargo test --verbose
+
+cache:
+  cargo: true
