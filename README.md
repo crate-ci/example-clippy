@@ -1,6 +1,7 @@
 example-clippy
 [![Travis Status](https://travis-ci.org/crate-ci/example-clippy.svg?branch=master)](https://travis-ci.org/crate-ci/example-clippy)
 [![Dependency Status](https://dependencyci.com/github/crate-ci/example-clippy/badge)](https://dependencyci.com/github/crate-ci/example-clippy)
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/crate-ci/general)
 ===========
 
 ## Features
